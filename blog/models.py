@@ -86,6 +86,7 @@ class Post(models.Model):
         return reverse('blog:detail', kwargs={'pk': self.pk})
 
     class Meta:
+        # ordering 属性用来指定文章排序方式,这里定义之后,其他的视图函数中就不用定义倒序输出了
         ordering = ['-created_time']
 
     def increase_views(self):

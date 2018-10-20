@@ -24,7 +24,8 @@ SECRET_KEY = 'i3k%m-808v3_)^h7975iw4v&fl5chq41^19j@u+b*vx7dvw*q$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# 允许访问的域名,可以包括自己注册的域名
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 # Application definition
 
